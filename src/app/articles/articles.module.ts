@@ -18,6 +18,8 @@ import { CategoriesComponent } from './categories/categories.component';
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports:[LatestArticlesComponent]
 })
+
 export class ArticlesModule { }

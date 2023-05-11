@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+   
+  navbarCollapsed = true;
+  
+  toggleNavbarCollapsing() {
+      this.navbarCollapsed = !this.navbarCollapsed;
+  }
 }
