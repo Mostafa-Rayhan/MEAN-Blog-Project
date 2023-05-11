@@ -68,3 +68,36 @@ footer {background-color: #000;color:#fff; padding:20px;}
 @media (max-width: 767px) {
 .intro-text {display: none;}
 }
+
+
+
+
+.blog-list .blog-box{
+    text-align: left;
+}
+.blog-list .blog-box h3 {
+    margin: 5px 0;
+    font-size: 22px;
+    color: #000;
+}
+.blog-list .blog-box p{
+    margin-bottom: 5px;
+}
+.blog-list .blog-box .readmore{
+    color:blue;
+}
+.widget{text-align: left; margin-bottom: 20px;padding: 15px;
+    border: 1px solid #f7f7f7;
+    box-shadow: 0px 2px 2px 1px #f6f6f6;}
+    .widget p{margin-bottom: 5px;}
+    .widget a{text-decoration: none;}
+    .widget .rb-box{
+        border-bottom: 1px solid #f6f6f6;
+    }
+ .widget-title{
+     text-align: left;
+     width: 100%;
+     margin: 15px auto;
+     display: inline-block;
+ }
+ .detail-img img{width:100%;}
