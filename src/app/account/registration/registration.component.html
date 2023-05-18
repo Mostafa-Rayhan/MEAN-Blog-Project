@@ -5,8 +5,8 @@
           <div class="col-md-6">
               <div class="login-box">
                   <h1>User Registration</h1>
-                  <div class="alert alert-success" *ngif="datasaved">
-                     {{massage}}
+                  <div class="alert alert-danger" *ngif="datasaved">
+                     {{message}}
                   </div>
                   <form (ngsubmit)="onSubmit()" [formgroup]="regForm">
                       
