@@ -1,5 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
+import { Router } from "@angular/router"; 
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import {AccountserviceService} from '../accountservice.service';
 import {Accountinfo} from '../accountinfo';
@@ -13,7 +14,11 @@ export class RegistrationComponent implements OnInit {
   datasaved = false;
   message: string;
 
-  constructor(private formbuilder: FormBuilder, private accountservice: AccountserviceService) { }
+  constructor(private formbuilder: FormBuilder, private accountservice: AccountserviceService, private router:Router) { 
+    if(localStorage.getItem('Loginuser')){
+      router.navigate(['/']);
+    }
+  }
 
   ngOnInit() {
     this.setFormState();
