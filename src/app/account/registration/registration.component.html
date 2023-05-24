@@ -8,7 +8,7 @@
                   <div class="alert alert-danger" *ngif="datasaved">
                      {{message}}
                   </div>
-                  <form (ngsubmit)="onSubmit()" [formgroup]="regForm">
+                  <form (ngsubmit)="onSubmit()" [formGroup]="regForm">
                       
                       <div class="form-group form-row">
                           <label class="col-md-3">Name : <span class="required">*</span></label>
